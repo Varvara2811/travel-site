@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  background:
+    url("../images/ground.png")   left 40vw    / 100vw auto no-repeat,
+    url("../images/gradient.png") left 0       / 100vw auto no-repeat,
+    url("../images/clouds.png")   left -20vw   / 100vw auto no-repeat,
+    url("../images/hill.jpg")     left 3.44vw  / 100vw auto no-repeat,
+    #0B1D27;
+  background: linear-gradient(
+    from bottom,
+    rgba(11, 29, 39, 0) 0,
+    rgba(11, 29, 39, 0.7) 4vw,
+    #0B1D27 8vw
+  );
+}

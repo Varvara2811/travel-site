@@ -1,0 +1,120 @@
+@use "../utilus/variables" as *;
+.hero{
+    position: relative;
+  min-height: 56.8vw;
+    & .container{
+        padding: 200px 0 598px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__contacts{
+         position: relative;
+    right: 250px;
+    top: 25px;
+        display: flex;
+           transform: rotate(90deg);
+           text-align: start;
+           gap: 24px;
+    }
+&__subscribe{
+color: #FFF;
+font-family: $font-text;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+&__svg{
+width: 24.0px;
+height: 24.0px;
+fill: #FFF;
+}
+&__text {
+  display: flex;
+  align-items: center; 
+  gap: 16px; 
+  color: $accent;
+  font-family: $font-text;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+
+&::before {
+  content: "";
+  flex-shrink: 0;
+  width: 72.0px;
+height: 2.0px;
+  background-color: $accent;
+}
+}
+&__title{
+    color: #FFF;
+font-family: Merriweather;
+font-size: 88px;
+font-style: normal;
+font-weight: 600;
+line-height: 100px;
+width: 950.0px;
+text-transform: capitalize;
+}
+&__subtitle{
+    color: #FFF;
+font-family: $font-text;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: flex;
+align-items: center;
+gap: 15px;
+}
+&__arrow{
+    width: 16.0px;
+height: 25.0px;
+transform: rotate(-135deg);
+fill: #FFF;
+}
+&__imp{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+&__list {
+  position: relative;
+    left: -75px;
+    top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+&__navs {
+  position: relative;
+  padding: 10px 25px 12px 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background-color: rgba(#FFF, 0.3);
+    transition: background-color 0.3s;
+  }
+  &:hover::after {
+    background-color: #fff;
+  }
+}
+&__navigations {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    font-family: $font-text;
+    font-size: 12px;
+    text-decoration: none;
+  }
+}

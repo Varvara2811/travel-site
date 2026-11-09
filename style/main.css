@@ -1,0 +1,318 @@
+body {
+  margin: 0;
+  background: url("../images/ground.png") left 40vw/100vw auto no-repeat, url("../images/gradient.png") left 0/100vw auto no-repeat, url("../images/clouds.png") left -20vw/100vw auto no-repeat, url("../images/hill.jpg") left 3.44vw/100vw auto no-repeat, #0B1D27;
+  background: linear-gradient(from bottom, rgba(11, 29, 39, 0) 0, rgba(11, 29, 39, 0.7) 4vw, #0B1D27 8vw);
+}
+
+.container {
+  max-width: 1760px;
+  margin: 0 50px;
+  margin: 0 auto;
+}
+
+.box {
+  max-width: 1462px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.hero {
+  position: relative;
+  min-height: 56.8vw;
+}
+.hero .container {
+  padding: 200px 0 598px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.hero__contacts {
+  position: relative;
+  right: 250px;
+  top: 25px;
+  display: flex;
+  transform: rotate(90deg);
+  text-align: start;
+  gap: 24px;
+}
+.hero__subscribe {
+  color: #FFF;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.hero__svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFF;
+}
+.hero__text {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #FBD784;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+.hero__text::before {
+  content: "";
+  flex-shrink: 0;
+  width: 72px;
+  height: 2px;
+  background-color: #FBD784;
+}
+.hero__title {
+  color: #FFF;
+  font-family: Merriweather;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100px;
+  width: 950px;
+  text-transform: capitalize;
+}
+.hero__subtitle {
+  color: #FFF;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.hero__arrow {
+  width: 16px;
+  height: 25px;
+  transform: rotate(-135deg);
+  fill: #FFF;
+}
+.hero__imp {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.hero__list {
+  position: relative;
+  left: -75px;
+  top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.hero__navs {
+  position: relative;
+  padding: 10px 25px 12px 0;
+}
+.hero__navs::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: background-color 0.3s;
+}
+.hero__navs:hover::after {
+  background-color: #fff;
+}
+.hero__navigations {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.start {
+  background: linear-gradient(to bottom, rgba(11, 29, 39, 0) 0, rgba(11, 29, 39, 0.7) 4vw, #0B1D27 8vw);
+}
+.start__important {
+  padding-top: 140px;
+  background: linear-gradient(to bottom, rgba(11, 29, 39, 0) 0, rgba(11, 29, 39, 0.7) 4vw, #0B1D27 8vw);
+}
+.start__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.start__items:nth-child(2) {
+  flex-direction: row-reverse;
+  position: relative;
+}
+.start__important {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.start__list {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.start__subtitle {
+  color: #FBD784;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.start__subtitle::before {
+  content: "";
+  flex-shrink: 0;
+  width: 72px;
+  height: 2px;
+  background-color: #FBD784;
+}
+.start__title {
+  color: #FFF;
+  font-family: Merriweather;
+  width: 555px;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.start__text {
+  color: #FFF;
+  font-family: "Jost", sans-serif;
+  width: 632px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+.start__subscripe {
+  color: #FBD784;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  gap: 16px;
+}
+.start__svg {
+  width: 16px;
+  height: 24px;
+  transform: rotate(135deg);
+  fill: #FBD784;
+}
+.start__img {
+  width: 566px;
+  height: 720px;
+  border-radius: 0 100px 0 100px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 40px 80px rgba(0, 0, 0, 0.45);
+}
+.start__step {
+  color: #FFF;
+  font-family: "Jost", sans-serif;
+  font-size: 240px;
+  font-style: normal;
+  position: relative;
+  font-weight: 700;
+  line-height: 240px;
+  opacity: 0.1;
+  position: absolute;
+}
+.start__items:nth-child(1) .start__step {
+  top: 1400px;
+  left: 60px;
+}
+.start__items:nth-child(2) .start__step {
+  top: 30px;
+  right: 600px;
+}
+.start__items:nth-child(3) .start__step {
+  top: 3230px;
+  left: 20px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+  gap: 40px;
+}
+.header__links {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header__logo {
+  color: #FFF;
+  font-family: Redaction;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  text-transform: capitalize;
+}
+.header__account {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  gap: 10px;
+}
+.header__svg {
+  width: 20px;
+  height: 20px;
+  fill: #FFF;
+  outline: 1px solid #FFF;
+  border-radius: 50px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,46 @@
+.header{
+& .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+&__list{
+    display: flex;
+    gap: 40px;
+}
+&__links{
+color: #FFF;
+font-family: Jost;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+&__logo{
+        color: #FFF;
+font-family: Redaction;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.32px;
+text-transform: capitalize;
+}
+&__account{
+    color: #FFF;
+font-family: Jost;
+font-size: 17px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: flex;
+gap: 10px;
+}
+&__svg{
+    width: 20.0px;
+height: 20.0px;
+fill: #FFF;
+outline: 1px solid #FFF;
+border-radius: 50px;
+}
+}

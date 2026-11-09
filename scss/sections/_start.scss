@@ -1,0 +1,123 @@
+@use "../utilus/variables" as *;
+.start {
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 29, 39, 0) 0,
+    rgba(11, 29, 39, 0.7) 4vw,
+    #0B1D27 8vw
+  );
+&__important{
+   padding-top: 140px; 
+   background: linear-gradient(
+    to bottom,
+    rgba(11, 29, 39, 0) 0,
+    rgba(11, 29, 39, 0.7) 4vw,
+    #0B1D27 8vw
+  );
+}
+  &__items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     &:nth-child(2){
+    flex-direction: row-reverse;
+    position: relative;
+  }
+  }
+ &__important{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+ }
+&__list{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+  &__subtitle{
+color: #FBD784;
+font-family: $font-text;
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 6px;
+text-transform: uppercase;
+display: flex;
+align-items: center;
+gap: 24px;
+&::before {
+  content: "";
+  flex-shrink: 0;
+  width: 72.0px;
+height: 2.0px;
+  background-color: #FBD784;
+}
+  }
+  &__title{
+    color: #FFF;
+font-family: Merriweather;
+width: 555.0px;
+font-size: 64px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+  }
+  &__text{
+    color: #FFF;
+font-family: $font-text;
+width: 632.0px;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px;
+  }
+&__subscripe{
+    color: #FBD784;
+font-family: $font-text;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: flex;
+gap: 16px;
+}
+&__svg{
+    width: 16.0px;
+height: 24.0px;
+transform: rotate(135deg);
+fill :#FBD784;
+}
+&__img{
+width: 566.0px;
+height: 720.0px;
+border-radius: 0 100px 0 100px;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.35),
+    0 40px 80px rgba(0, 0, 0, 0.45);
+}
+&__step{
+    color: #FFF;
+font-family: $font-text;
+font-size: 240px;
+font-style: normal;
+position: relative;
+font-weight: 700;
+line-height: 240px;
+opacity: 0.1;
+position: absolute;
+  
+}
+ &__items:nth-child(1) .start__step {
+     top: 1400px;   
+  left: 60px; 
+  }
+   &__items:nth-child(2) .start__step {
+     top: 30px;   
+  right: 600px; 
+  }
+   &__items:nth-child(3) .start__step {
+     top: 3230px;   
+  left: 20px; 
+  }
+}
